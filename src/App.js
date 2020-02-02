@@ -1,26 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Element } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
+
+import LoadingPage from './pages/LoadingPage';
+import Navbar from './navigation/Navbar';
+import Socials from './components/Socials';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ExperiencePage from './pages/ExperiencePage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
+import Footer from './pages/Footer';
+
+const LOADING_ANIMATION_TIME = 6000;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // Loading page timing
+  const [isLoading, setIsLoading] = useState(true);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, LOADING_ANIMATION_TIME)
+
+  if (isLoading) {
+    return (
+      <LoadingPage/>
+    )
+  } else {
+    return (
+      <div>
+        <Navbar/>
+
+        <Element name="/home">
+          <HomePage/>
+        </Element>
+        <Element name="/about">
+          <Fade>
+            <AboutPage/>
+          </Fade>
+        </Element>
+        <Element name="/experience">
+          <Fade>
+            <ExperiencePage/>
+          </Fade>
+        </Element>
+        <Element name="/projects">
+          <Fade>
+            <ProjectsPage/>
+          </Fade>
+        </Element>
+        <Element name="/contact">
+          <Fade>
+            <ContactPage/>
+          </Fade>
+        </Element>
+        
+        <Footer/>
+        <Socials/>
+      </div>
+    )
+  }
 }
 
 export default App;

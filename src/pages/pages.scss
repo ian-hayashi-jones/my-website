@@ -1,0 +1,571 @@
+@import '../utilities/variables.scss';
+
+
+/*********               *********/
+/********* GENERAL STUFF *********/ 
+/*********               *********/
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+
+    @include media-query($tablet) {
+        margin-top: 80px;
+    }
+
+    @include media-query($laptop) {
+        margin-top: 130px;
+    }
+
+    @include media-query($desktop) {
+        margin-top: 180px;
+    }
+}
+
+.loading-page {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page-content {
+    width: $page-width-mobile;
+    margin: $gutter-vertical-small $gutter-horizontal-small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include media-query($tablet) {
+        width: $page-width-tablet;
+    }
+
+    @include media-query($laptop) {
+        width: $page-width-laptop;
+        margin: auto $gutter-horizontal-large;
+    }
+
+    @include media-query($desktop) {
+        width: $page-width-desktop;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 400px;
+
+    @include media-query($tablet) {
+        width: 600px;
+    }
+
+    @include media-query($laptop) {
+        flex-direction: row;
+        width: 400px;
+    }
+
+    @include media-query($desktop) {
+        width: 600px;
+    }
+}
+
+// section headers //
+.header-container {
+    width: $page-width-mobile;
+    margin: 0 $gutter-horizontal-small;
+
+    @include media-query($tablet) {
+        width: $page-width-tablet;
+    }
+
+    @include media-query($laptop) {
+        width: $page-width-laptop;
+        margin-left: 90px;
+        margin-bottom: 30px;
+    }
+
+    @include media-query($desktop) {
+        width: $page-width-desktop;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-query($laptop) {
+        flex-direction: row;
+    }
+}
+
+.header-hr {
+    margin: 10px 20px;
+    width: 145px;
+
+    @include media-query($laptop) {
+        width: 200px;
+    }
+}
+
+.header-title {
+    margin-bottom: 0;
+}
+
+
+/*********              *********/
+/********* LOADING PAGE *********/ 
+/*********              *********/
+.animated-logo-outline {
+    fill: none;
+    stroke-width: .2;
+    stroke: $color-primary;
+}
+
+.animated-logo-fill {
+    stroke: $color-primary;
+    fill: $color-primary;
+}
+
+
+/*********           *********/
+/********* HOME PAGE *********/ 
+/*********           *********/
+.home-full-page {
+   justify-content: flex-start;
+   align-items: flex-start;
+   height: 500px;
+}
+
+.home-line {
+    @include media-query($tablet) {
+        margin-left: 100px;
+    }
+
+    @include media-query($laptop) {
+        font-size: $font-size-header;
+        line-height: $line-height-header;
+    }
+}
+
+.home-line-highlight {
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+
+    @include media-query($tablet) {
+        font-size: 6.0rem;
+        line-height: 6.0rem;
+    }
+
+    @include media-query($laptop) {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+    }
+}
+
+.home-line-sub-highlight {
+    color: $color-font-body;
+    font-weight: bold;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+
+    @include media-query($tablet) {
+        font-size: $font-size-medium;
+    }
+
+    @include media-query($laptop) {
+        font-size: $font-size-large;
+    }
+}
+
+.home-line-summary {
+    line-height: $line-height-header;
+}
+
+
+/*********            *********/
+/********* ABOUT PAGE *********/ 
+/*********            *********/
+.about-page-content {
+    @include media-query($laptop) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+// headshot
+.about-headshot-container {
+    display: flex;
+
+    @include media-query($laptop) {
+        margin-right: 25px;
+    }
+}
+
+.about-headshot {
+    margin: auto;
+}
+
+// info //
+.about-info-container {
+    @include media-query($laptop) {
+        margin-left: 25px;
+    }
+}
+
+.about-card-icon-container {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    @include media-query($laptop) {
+        margin-right: 30px;
+    }
+}
+
+.about-icon-outline-vector {
+    stroke: $color-primary;
+}
+
+.about-icon-vector {
+    fill: $color-primary;
+    stroke: $color-primary;
+}
+
+.about-companyname {
+    color: $color-primary;
+}
+
+.about-schoolname {
+    color: $color-primary;
+}
+
+
+/*********                 *********/
+/********* EXPERIENCE PAGE *********/ 
+/*********                 *********/
+.experience-container {
+    display: flex;
+    flex-direction: column;
+
+    @include media-query($laptop) {
+        flex-direction: row;
+    }
+}
+
+// Menu //
+.experience-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: auto;
+    width: 250px;
+    padding-left: 200px;
+
+    @include media-query($tablet) {
+        padding-left: 70px;
+        width: 500px;
+    }
+
+    @include media-query($laptop) {
+        flex-direction: column;
+        width: auto;
+        padding-left: 0px;
+    }
+}
+
+.experience-menu-logo-container {
+    height: 80px;
+    width: 80px;
+    margin: 20px 5px 0px 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1.5px solid transparent;
+    transition: $hover-transition;
+    cursor: pointer;
+ 
+    @include media-query($laptop) {
+        margin: 20px 0px 0px 0px;
+        border-bottom: none;
+        border-left: 1.5px solid transparent;
+    }
+}
+
+.experience-menu-logo-container:hover {
+    border-bottom: 1.5px solid $color-primary;
+    background-color: $color-bg-highlight;
+
+    @include media-query($laptop) {
+        border-bottom: none;
+        border-left: 1.5px solid $color-primary;
+    }
+}
+
+.experience-menu-logo-container-highlight {
+    border-bottom: 1.5px solid $color-primary;
+    background-color: $color-bg-highlight;
+
+    @include media-query($laptop) {
+        border-bottom: none;
+        border-left: 1.5px solid $color-primary;
+    }
+}
+
+.experience-logo-vector {
+    fill: $color-secondary;
+    transition: $hover-transition;
+}
+
+.experience-logo-vector:hover {
+    fill: $color-primary;
+}
+
+.experience-logo-vector-highlight {
+    fill: $color-primary;
+}
+
+
+// Content //
+.experience-position-br {
+    @include media-query($laptop) {
+        display: none;
+    }
+}
+
+.experience-company {
+    color: $color-primary;
+}
+
+.experience-dates {
+    color: $color-font-body;
+    font-weight: lighter;
+}
+
+.experience-skills {
+    color: $color-secondary;
+    font-weight: bold;
+}
+
+.experience-card-logo-container {
+    flex-shrink: 0;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-query($laptop) {
+        margin-right: 30px;
+    }
+}
+
+.experience-paragraph:before {
+    font-size: 2.4rem;
+    content: "\00BB   ";
+    color: $color-primary;
+}
+
+
+/*********               *********/
+/********* PROJECTS PAGE *********/ 
+/*********               *********/
+$project-item-container-width: 700px;
+$project-item-content-width-mobile: 350px;
+$project-item-content-width: 500px;
+$color-project-item-overlay: #D1E6F9;
+
+.project-item-container {
+    position: relative;
+    width: $project-item-container-width;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    @include media-query($laptop) {
+        flex-direction: row;
+    }
+}
+
+.project-item-container.left {
+    justify-content: flex-end;
+}
+
+.project-item-image-container {
+    position: relative;
+    width: $project-item-content-width-mobile;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: $color-bg-card;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    cursor: pointer;
+
+    @include media-query($mobile-landscape) {
+       width: $project-item-content-width;
+    }
+
+    @include media-query($laptop) {
+        margin: 0;
+        margin-top: 150px;
+    }
+}
+
+.project-item-image-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: $color-project-item-overlay;
+    opacity: 0;
+    transition: $hover-transition;
+}
+
+.project-item-image-overlay:hover {
+    opacity: .3;
+}
+
+.project-item-image-container img {
+    width: 100%;
+}
+
+.project-item-content-container {
+    width: $project-item-content-width-mobile;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+
+    @include media-query($mobile-landscape) {
+        width: $project-item-content-width;
+    }
+
+    @include media-query($laptop) {
+        display: inline;
+        position: absolute;
+    }
+}
+
+.project-item-content-container.left {
+
+    @include media-query($laptop) {
+        left: -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.project-item-content-container.right {
+    @include media-query($laptop) {
+        right: -100px;
+    }
+}
+
+.project-item-title, .project-item-subtitle {
+    margin-bottom: 0;
+}
+
+.project-item-subtitle {
+    display: flex;
+}
+
+.project-item-title {
+    color: $color-primary;
+}
+
+.project-item-info {
+    margin-top: 10px;
+    color: $color-secondary;
+    padding: 20px;
+    // border-radius: 10px;
+    background-color: $color-bg-highlight;
+    opacity: 0.75;
+}
+
+.project-item-info.left {
+    text-align: right;
+}
+
+.project-item-icons {
+    display: flex;
+    align-items: center;
+}
+
+.project-item-icons.left {
+    margin-right: 5px;
+}
+
+.project-item-icons.right {
+    margin-left: 5px;
+}
+
+.project-item-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project-icon-vector {
+    fill: $color-secondary;
+    transition: $hover-transition;
+    cursor: pointer;
+}
+
+
+.project-icon-vector:hover {
+    fill: $color-primary;
+}
+
+
+/*********              *********/
+/********* CONTACT PAGE *********/ 
+/*********              *********/
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact-body {
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    color: $color-secondary;
+}
+
+.contact-highlight {
+    color: $color-primary;
+}
+
+
+/*********        *********/
+/********* FOOTER *********/ 
+/*********        *********/
+.footer {
+    background-color: $color-bg-footer;
+    height: 60px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+

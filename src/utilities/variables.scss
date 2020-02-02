@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$font-heading: 'Ubuntu', sans-serif;
+$font-body: 'Roboto', sans-serif; 
+$font-size-body: 1.8rem;
+$font-size-header: 2.4rem;
+$font-size-medium: 3.4rem;
+$font-size-large: 4.8rem;
+
+$line-height-body: 2.7rem;
+$line-height-header: 3.6rem;
+$line-height-medium: 5.1rem;
+$line-height-large: 7.2rem;
+
+$color-primary: #A5D4FF;
+$color-secondary: #C7D8E8;
+$color-font-body: #929FAA;
+$color-bg: #121923;
+$color-bg-secondary: #232A33;
+$color-bg-card: #141D29;
+$color-bg-highlight: #424344;
+$color-bg-footer: #171C24;
+
+$page-width-mobile: 365px;
+$page-width-tablet: 728px;
+$page-width-laptop: 952px;
+$page-width-desktop: 1160px;
+
+$gutter-vertical-small: 40px;
+$gutter-horizontal-small: 5px;
+$gutter-horizontal-large: 20px;
+
+$hover-transition: 0.3s ease-out;
+$hover-opacity: 0.7;
+
+
+
+@mixin media-query($media-query) {
+    $breakpoint-found: false;
+  
+    @each $breakpoint in $grid-breakpoints {
+      $name: nth($breakpoint, 1);
+      $declaration: nth($breakpoint, 2);
+  
+      @if $media-query == $name and $declaration {
+        $breakpoint-found: true;
+  
+        @media only screen and #{$declaration} {
+          @content;
+        }
+      }
+    }
+  
+    @if $breakpoint-found == false {
+      @warn 'Breakpoint "#{$media-query}" does not exist';
+    }
+}
+
+$viewport-mobile-landscape: 480px;
+$viewport-tablet-portrait: 768px;
+$viewport-laptop: 992px;
+$viewport-desktop: 1200px;
+
+$mobile-landscape: 'mobile';
+$tablet-down: 'tablet-down';
+$tablet: 'tablet';
+$laptop: 'laptop';
+$desktop: 'desktop';
+
+$grid-breakpoints: (
+  $mobile-landscape '(min-width: #{$viewport-mobile-landscape})',
+  $tablet-down '(max-width: #{$viewport-tablet-portrait - 1})',
+  $tablet '(min-width: #{$viewport-tablet-portrait})',
+  $laptop '(min-width: #{$viewport-laptop})',
+  $desktop '(min-width: #{$viewport-desktop})',
+);
