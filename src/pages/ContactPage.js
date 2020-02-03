@@ -11,7 +11,7 @@ function ContactPage() {
 
                 <div className="contact-content">
                     <div className="contact-body">
-                        I'm open to new opportunities, if you want to work together or just say hi get in touch!
+                        I'm open to new opportunities, if you want to work together or just say hi I'd love to get in touch!
                     </div>
 
                     <h3 className="contact-email">

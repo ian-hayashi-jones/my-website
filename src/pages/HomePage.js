@@ -35,7 +35,7 @@ function HomePage() {
 
     const fourthLineProps = useSpring({
         opacity: 1,
-        marginTop: '50px',
+        marginTop: '30px',
         from: { opacity: 0, marginTop: '0px' },
         config: { tension: 50 },
         delay: ANIMATION_DELAY + (3 * ANIMATION_MARGIN)

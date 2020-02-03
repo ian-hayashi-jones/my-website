@@ -48,7 +48,7 @@ const projects = [
     },
     {
         title: 'The \'Most Country\' Words',
-        subtitle: 'Interactive Website',
+        subtitle: 'interactive website',
         image: countryMusicImage,
         url: 'https://ianjones763.github.io/countryMusicLyricsExplainer/',
         info: 'This interactive data visualization website analyzes thousands of songs to determine what words make up the country music genre.',
@@ -77,7 +77,7 @@ const projects = [
         subtitle: 'mobile app design',
         image: podmateImage,
         url: 'https://ianjones763.github.io/podmate-site/',
-        info: 'PodMate is design concept for a mobile app that helps Juul users quit. Set a goal, track your progress, and quit vaping!',
+        info: 'PodMate is a design concept for a mobile app that helps Juul users quit. Set a goal, track your progress, and quit vaping!',
         icons: [],
         layoutLeft: true
     }
