@@ -77,7 +77,7 @@ function ExperiencePage() {
                         website="https://utility.design/"
                         position="Technical and Design Consultant" 
                         dates="2018 - present" 
-                        skills="Javascript, HTML,CSS, Sketch, Adobe Suite" 
+                        skills="Javascript, HTML, CSS, Sketch, Adobe Suite" 
                         info={UD_INFO}/>,
 
         <ExperienceCard className="experience-oracle-netsuite" 
