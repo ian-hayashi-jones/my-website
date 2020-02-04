@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4672906414374376508d023e3ab9572",
+    "revision": "133dda6f5a0b23e0889d6936ccfebfcc",
     "url": "/my-website/index.html"
   },
   {
-    "revision": "37b8d190a84988bcf5ef",
+    "revision": "7f0bb60e8259de6ba742",
     "url": "/my-website/static/css/main.ccc9127b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/js/2.5cf6c04c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37b8d190a84988bcf5ef",
-    "url": "/my-website/static/js/main.8fe4567b.chunk.js"
+    "revision": "7f0bb60e8259de6ba742",
+    "url": "/my-website/static/js/main.ed02b000.chunk.js"
   },
   {
     "revision": "fe5e0530def7e943c484",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-website/static/media/country-explainer-project-tile.5b3342d2.png"
   },
   {
-    "revision": "0f45a250003c2e3fcb840c5f75e7c105",
-    "url": "/my-website/static/media/ianjones-resume.0f45a250.pdf"
+    "revision": "a12937d6f0e2dbddb9eb1df7a393e6b8",
+    "url": "/my-website/static/media/ianjones-resume.a12937d6.pdf"
   },
   {
     "revision": "6fee219556b52f332d04ef0cf5407a08",
