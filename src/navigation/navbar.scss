@@ -1,11 +1,13 @@
 @import '../utilities/variables.scss';
 
+
 .navbar {
     z-index: 100;  // Need to have it render over top of all other elements (react-reveal is re-rendering stuff on top of this otherwise)
     padding: 8px;
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     background-color: $color-bg;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
@@ -14,14 +16,6 @@
 
     @include media-query($tablet) {
         flex-direction: row;
-    }
-}
-
-.menu-open {
-    height: 100vh;
-
-    @include media-query($tablet) {
-        height: auto;
     }
 }
 
@@ -40,28 +34,6 @@
         display: flex;
         align-items: center;
         margin-left: auto;
-    }
-}
-
-.navbar-menu-open {
-    @include media-query($tablet-down) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: $color-bg;
-        background-color: $color-bg-secondary;
-        height: 100vh;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 76px;
-        opacity: 0;
-        transition: opacity 0.2s;
-        opacity: 0.5;
-        visibility: visible;
-        z-index: calc(var(--sidebar-z-index) - 1);
     }
 }
 
@@ -152,3 +124,37 @@
 .navbar-menu-icon-open::after {
     transform: translate(0, 20px) rotate(-45deg);
 }
+
+.hamburger-menu-open {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $color-primary;
+    height: calc(100vh - 83px);
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 100%;
+
+    a {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem 0;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        color: $color-bg;
+        text-decoration: none;
+        transition: $hover-transition;
+        cursor: pointer;
+
+        &:hover {
+            opacity: $hover-opacity;
+        }
+    }
+}
+
+.hamburger-menu {
+    display: none;
+}
+

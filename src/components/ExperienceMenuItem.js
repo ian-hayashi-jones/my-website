@@ -24,6 +24,8 @@ function ExperienceMenuItem({company, highlight}) {
         case 'Toyota InfoTech Labs':
             companyLogo = <ToyotaLogo highlight={highlight}/>;
             break;
+        default:
+            break;
     }
 
     return (

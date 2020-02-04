@@ -7,47 +7,48 @@ import NavbarLink from '../navigation/NavbarLink';
 import PersonalLogo from '../assets/PersonalLogo';
 
 import myResume from '../assets/ianjones-resume.pdf';
+import HamburgerMenu from './HamburgerMenu';
 
 function Navbar() {
+  const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
-  const [navbarMenuOpen, setNavbarMenuOpen] = useState(false);
+  const menuProps = useSpring({
+      opacity: 1,
+      from: { opacity: 0 },
+      config: { tension: 50 }
+  })
 
-    const menuProps = useSpring({
-        opacity: 1,
-        from: { opacity: 0 },
-        config: { tension: 50 }
-    })
-
-    const linkProps = useSpring({
-        margin: '20px',
-        from: { margin: '0px' },
-        config: { tension: 50 }
-    })
+  const linkProps = useSpring({
+      margin: '20px',
+      from: { margin: '0px' },
+      config: { tension: 50 }
+  })
 
   return (
-    <animated.div style={menuProps} className={navbarMenuOpen ? "navbar menu-open" : "navbar"}>
+    <animated.div style={menuProps} className="navbar">
       {/* header is logo + hamburger menu icon */}
       <div className="navbar-header">
-        <div className="personal-logo" onClick={() => setNavbarMenuOpen(false)}>
+        <div className="personal-logo" onClick={() => setHamburgerMenuOpen(false)}>
           <Link to="/home" spy={true} smooth={true} duration={500} offset={-280}>
             <PersonalLogo/>
           </Link>
         </div>
-        <div onClick={() => setNavbarMenuOpen(!navbarMenuOpen)} className={navbarMenuOpen ? "navbar-menu-icon navbar-menu-icon-open" : "navbar-menu-icon"}/>
+        <div onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)} className={hamburgerMenuOpen ? "navbar-menu-icon navbar-menu-icon-open" : "navbar-menu-icon"}/>
       </div>
       
       {/* navbar-menu is links to pages */}
-      <div className={navbarMenuOpen ? "navbar-menu navbar-menu-open" : "navbar-menu"}>
-        <NavbarLink link="/about" name="about" setNavbarMenuOpen={setNavbarMenuOpen} props={linkProps}/>
-        <NavbarLink link="/experience" name="experience" setNavbarMenuOpen={setNavbarMenuOpen} props={linkProps}/>
-        <NavbarLink link="/projects" name="projects" setNavbarMenuOpen={setNavbarMenuOpen} props={linkProps}/>
-        <NavbarLink link="/contact" name="contact" setNavbarMenuOpen={setNavbarMenuOpen} props={linkProps}/>
+      <div className="navbar-menu">
+        <NavbarLink link="/about" name="about" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
+        <NavbarLink link="/experience" name="experience" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
+        <NavbarLink link="/projects" name="projects" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
+        <NavbarLink link="/contact" name="contact" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
 
         <animated.div style={linkProps}>
           <a className="navbar-link outline" href={myResume} download>resume</a>
         </animated.div>
       </div>
- 
+        
+      <HamburgerMenu open={hamburgerMenuOpen} setOpen={setHamburgerMenuOpen}/>
     </animated.div>
   );
 }
