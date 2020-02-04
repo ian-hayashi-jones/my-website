@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 
 import LoadingPage from './pages/LoadingPage';
 import Navbar from './navigation/Navbar';
-import HamburgerMenu from './navigation/HamburgerMenu';
 import Socials from './components/Socials';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -30,8 +29,6 @@ function App() {
     return (
       <div className="no-scroll">
         <Navbar/>
-
-        {/* <HamburgerMenu open={open} setOpen={setOpen}/> */}
 
         <Element name="/home">
           <HomePage/>
