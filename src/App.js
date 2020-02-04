@@ -27,7 +27,7 @@ function App() {
     )
   } else {
     return (
-      <div className="no-scroll">
+      <div>
         <Navbar/>
 
         <Element name="/home">
