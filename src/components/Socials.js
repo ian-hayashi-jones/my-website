@@ -2,10 +2,6 @@ import React from 'react';
 import { animated, useSpring } from 'react-spring';
 import './socials.scss';
 
-import AboutIcon from '../assets/about/AboutIcon';
-import WorkIcon from '../assets/about/WorkIcon';
-import SchoolIcon from '../assets/about/SchoolIcon';
-
 import EmailIcon from '../assets/socials-sidebar/EmailIcon';
 import GithubIcon from '../assets/socials-sidebar/GithubIcon';
 import LinkedInIcon from '../assets/socials-sidebar/LinkInIcon';

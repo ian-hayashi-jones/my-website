@@ -568,7 +568,7 @@ $color-project-item-overlay: #D1E6F9;
 
 .contact-email {
     color: $color-secondary;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     
     @include media-query($mobile-landscape) {
         font-size: $font-size-body;
@@ -587,6 +587,26 @@ $color-project-item-overlay: #D1E6F9;
     background-color: $color-bg-footer;
     height: 60px;
     margin-top: 30px;
+}
+
+.footer-socials {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+    @include media-query($tablet) {
+        display: none;
+    }
+}
+
+.footer-socials-item {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 
