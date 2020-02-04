@@ -20,6 +20,7 @@
 }
 
 /* personal logo and hamburger menu icon */
+
 .navbar-header {
     display: flex;
     flex-direction: row;
@@ -64,6 +65,14 @@
 
 .outline:hover {
     border-color: $color-primary;
+}
+
+.personal-logo-vector-circle {
+    stroke: $color-primary;
+}
+
+.personal-logo-vector-path {
+    fill: $color-primary;
 }
 
 .personal-logo {
