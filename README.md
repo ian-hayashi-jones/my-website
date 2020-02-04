@@ -1,4 +1,4 @@
-<strong>My personal website / portfolio.</strong>
+<h1>My personal website / portfolio.</h1>
 
 Implemented from scratch in React.
 
