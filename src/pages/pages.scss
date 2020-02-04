@@ -583,16 +583,26 @@ $color-project-item-overlay: #D1E6F9;
 /*********        *********/
 /********* FOOTER *********/ 
 /*********        *********/
-.footer {
+.page-container.footer {
     background-color: $color-bg-footer;
-    height: 60px;
-    margin-top: 30px;
+    margin-top: 15px;
+    padding: 15px;
+
+    @include media-query($tablet) {
+        margin-top: 30px;
+        padding: 30px;
+    }
+}
+
+.page-content.footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footer-socials {
     display: flex;
     height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 
@@ -609,6 +619,7 @@ $color-project-item-overlay: #D1E6F9;
     margin-right: 10px;
     cursor: pointer;
 }
+
 
 
 

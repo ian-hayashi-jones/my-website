@@ -58,7 +58,7 @@ function App() {
         <Socials/>
       </div>
     )
-  }
+  // }
 }
 
 export default App;

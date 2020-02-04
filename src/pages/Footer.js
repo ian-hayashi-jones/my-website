@@ -19,7 +19,7 @@ function Footer() {
 
     return (
         <div className="page-container footer">
-            <div className="page-content">
+            <div className="page-content footer">
                 <div className="footer-socials">
                     <a className="footer-socials-item" href="mailto:ianjones@alumni.stanford.edu" target="_blank">
                         <animated.div style={props}>
@@ -46,7 +46,7 @@ function Footer() {
                     </a>
                 </div>
                 
-                <div>
+                <div className="footer-copyright">
                     © 2020 Ian Jones
                 </div>
             </div>
