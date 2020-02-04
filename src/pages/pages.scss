@@ -4,10 +4,6 @@
 /*********               *********/
 /********* GENERAL STUFF *********/ 
 /*********               *********/
-.no-scroll {
-    overflow-y: hidden;
-}
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -148,7 +144,7 @@
     height: 500px;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .home-line {
