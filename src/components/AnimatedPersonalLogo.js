@@ -16,22 +16,22 @@ export default function AnimatedPersonalLogo () {
     // Spring animation hooks
     const ijProps = useSpring({
         strokeDasharray: 200,
-        strokeDashoffset: 50,
-        from: { strokeDashoffset: -150 },
-        config: { friction: 300 }
-    })
-
-    const circleProps = useSpring({
-        strokeDasharray: 200,
         strokeDashoffset: 0,
         from: { strokeDashoffset: 200 },
         config: { friction: 300 }
     })
 
+    const circleProps = useSpring({
+        strokeDasharray: 300,
+        strokeDashoffset: 0,
+        from: { strokeDashoffset: 300},
+        config: { friction: 300 }
+    })
+
     const dotProps = useSpring({
-        strokeDasharray: 200,
-        strokeDashoffset: 100,
-        from: { strokeDashoffset: -200 },
+        strokeDasharray: 50,
+        strokeDashoffset: 0,
+        from: { strokeDashoffset: 50 },
         config: { friction: 500 }
     })
 
@@ -39,14 +39,13 @@ export default function AnimatedPersonalLogo () {
         ref: fillRef,
         opacity: 1,
         from: { opacity: 0 },
-        config: { friction: 50 },
-        delay: 3500
+        delay: 1500
     })
 
     const fadeOutProps = useSpring({
         ref: fadeOutRef,
         opacity: 0,
-        from: { opacity: 1 },
+        from: { opacity: 1 }
     })
 
     // Fade out logo after it gets filled
