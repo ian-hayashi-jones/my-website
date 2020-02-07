@@ -4,7 +4,7 @@ import './socials.scss';
 
 import EmailIcon from '../assets/socials-sidebar/EmailIcon';
 import GithubIcon from '../assets/socials-sidebar/GithubIcon';
-import LinkedInIcon from '../assets/socials-sidebar/LinkInIcon';
+import LinkedInIcon from '../assets/socials-sidebar/LinkedInIcon';
 import InstagramIcon from '../assets/socials-sidebar/InstagramIcon';
 
 
@@ -51,32 +51,32 @@ function Socials() {
 
     return (
         <div className="socials-sidebar">
-            <a className="socials-sidebar-item" href="mailto:ianjones@alumni.stanford.edu" target="_blank">
+            <a className="socials-sidebar-item" href="mailto:ianjones@alumni.stanford.edu" target="_blank" rel="noopener noreferrer">
                 <animated.div style={topItemProps}>
                     <EmailIcon/>
                 </animated.div>
             </a>
 
-            <a className="socials-sidebar-item" href="https://www.linkedin.com/in/ian-hayashi-jones/" target="_blank">
+            <a className="socials-sidebar-item" href="https://www.linkedin.com/in/ian-hayashi-jones/" target="_blank" rel="noopener noreferrer">
                 <animated.div style={topItemProps}>
                     <LinkedInIcon/>
                 </animated.div>
             </a>
             
-            <a className="socials-sidebar-item" href="https://github.com/ianjones763/" target="_blank">
+            <a className="socials-sidebar-item" href="https://github.com/ianjones763/" target="_blank" rel="noopener noreferrer">
                 <animated.div style={midItemProps}>
                     <GithubIcon/>
                 </animated.div>
             </a>
             
-            <a className="socials-sidebar-item" href="https://www.instagram.com/ianjones.photo/" target="_blank">
+            <a className="socials-sidebar-item" href="https://www.instagram.com/ianjones.photo/" target="_blank" rel="noopener noreferrer">
                 <animated.div style={botItemProps}>
                     <InstagramIcon/>
                 </animated.div>
             </a>
 
             <svg className="socials-sidebar-line" width="2px" height="86px" viewBox="0 0 2 86">
-                <g transform="translate(-41.000000, -938.000000)" stroke="#C7D8E8" stroke-width="2">
+                <g transform="translate(-41.000000, -938.000000)" stroke="#C7D8E8" strokeWidth="2">
                     <animated.path
                         style={lineProps}
                         className="animated-line"

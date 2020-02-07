@@ -19,7 +19,7 @@ const UD_INFO =
         <br></br>
         <div className="experience-paragraph">
             I provided technical consultation to create and 
-            launch <a href="https://utility.design/products/ud-rep-pedal" target="_blank">UD Rep</a> and <a href="https://utility.design/products/ud-vidami-pedal" target='_blank'>UD Vidami</a> guitar 
+            launch <a href="https://utility.design/products/ud-rep-pedal" target="_blank" rel="noopener noreferrer">UD Rep</a> and <a href="https://utility.design/products/ud-vidami-pedal" target='_blank' rel="noopener noreferrer">UD Vidami</a> guitar 
             pedals, tools to learn guitar through online videos.
         </div>
         <br></br>
@@ -42,12 +42,12 @@ const ORACLE_NETSUITE_INFO =
 const NVIDIA_INFO =
     <div className="experience-paragraph">
         I worked on the Big Data and Deep Learning Cloud Platform team, implementing real-time big-data pipelines 
-        for <a href="https://www.nvidia.com/en-us/geforce-now/" target="_blank">NVIDIA GeForce Now</a>, a streaming video game subscription service.
+        for <a href="https://www.nvidia.com/en-us/geforce-now/" target="_blank" rel="noopener noreferrer">NVIDIA GeForce Now</a>, a streaming video game subscription service.
     </div>
 
 const STANFORD_ENGINEERING_INFO =
     <div className="experience-paragraph">
-        I was a course assistant for <a href="https://explorecourses.stanford.edu/search?q=CS108" target="_blank">Object-Oriented Systems Design</a>, 
+        I was a course assistant for <a href="https://explorecourses.stanford.edu/search?q=CS108" target="_blank" rel="noopener noreferrer">Object-Oriented Systems Design</a>, 
         taught by Dr. Patrick Young at Stanford. In this role, I assisted students with debugging, helped develop OOP best practices, held office hours, and assessed student programming assignments and projects.
     </div>
 
@@ -62,7 +62,7 @@ const TOYOTA_INFO =
         </div>
         <br></br>
         <div className="experience-paragraph">
-            I <a href="https://ieeexplore.ieee.org/document/8814063" target="_blank">published a paper</a> through IEEE, at the Intelligent Vehicles Symposium ’19 in Paris, France.
+            I <a href="https://ieeexplore.ieee.org/document/8814063" target="_blank" rel="noopener noreferrer">published a paper</a> through IEEE, at the Intelligent Vehicles Symposium ’19 in Paris, France.
         </div>
     </div>
 
@@ -126,23 +126,23 @@ function ExperiencePage() {
             <div className="page-content experience-container">
                 <div className="experience-menu-container">
                     <div onClick={() => setCurrExperience(0)}>
-                        <ExperienceMenuItem company="Utility Design" highlight={currExperience == 0 ? true : false}/>
+                        <ExperienceMenuItem company="Utility Design" highlight={currExperience === 0 ? true : false}/>
                     </div>
                     
                     <div onClick={() => setCurrExperience(1)}>
-                        <ExperienceMenuItem company="Oracle NetSuite" highlight={currExperience == 1 ? true : false}/>
+                        <ExperienceMenuItem company="Oracle NetSuite" highlight={currExperience === 1 ? true : false}/>
                     </div>
 
                     <div onClick={() => setCurrExperience(2)}>
-                        <ExperienceMenuItem company="NVIDIA" highlight={currExperience == 2 ? true : false}/>
+                        <ExperienceMenuItem company="NVIDIA" highlight={currExperience === 2 ? true : false}/>
                     </div>
 
                     <div onClick={() => setCurrExperience(3)}>
-                        <ExperienceMenuItem company="Stanford University School of Engineering" highlight={currExperience == 3 ? true : false}/>
+                        <ExperienceMenuItem company="Stanford University School of Engineering" highlight={currExperience === 3 ? true : false}/>
                     </div>
 
                     <div onClick={() => setCurrExperience(4)}>
-                        <ExperienceMenuItem company="Toyota InfoTech Labs" highlight={currExperience == 4 ? true : false}/>
+                        <ExperienceMenuItem company="Toyota InfoTech Labs" highlight={currExperience === 4 ? true : false}/>
                     </div>
                 </div>
 

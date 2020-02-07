@@ -52,7 +52,7 @@ function AboutPage() {
 
             <div className="page-content about-page-content">
                 <div className="about-headshot-container">
-                    <img className="about-headshot" src={require('../assets/about/about-headshot-ian.jpg')}/>
+                    <img className="about-headshot" src={require('../assets/about/about-headshot-ian.jpg')} alt="Ian Jones headhshot"/>
                 </div>
 
                 <div className="about-info-container">

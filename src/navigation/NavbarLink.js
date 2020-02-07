@@ -3,14 +3,14 @@ import { Link } from 'react-scroll';
 import { animated } from 'react-spring';
 
 
-function NavbarLink({link, name, setNavbarMenuOpen, props}) {
+function NavbarLink({link, name, setNavbarMenuOpen, animationProps}) {
     function closeMenu() {
         setNavbarMenuOpen(false)
     }
 
     return (
-        <animated.div style={props}>
-            <Link to={link} spy={true} smooth={true} duration={1000} offset={-120} smooth={"easeInSine"} 
+        <animated.div style={animationProps}>
+            <Link to={link} spy={true} duration={1000} offset={-120} smooth={"easeInSine"} 
                   onSetActive={closeMenu} onSetInactive={closeMenu} activeClass="active-navlink" className="navbar-link">
                 {name}
             </Link>

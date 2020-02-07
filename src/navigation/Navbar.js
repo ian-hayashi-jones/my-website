@@ -38,10 +38,10 @@ function Navbar() {
       
       {/* navbar-menu is links to pages */}
       <div className="navbar-menu">
-        <NavbarLink link="/about" name="about" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
-        <NavbarLink link="/experience" name="experience" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
-        <NavbarLink link="/projects" name="projects" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
-        <NavbarLink link="/contact" name="contact" setNavbarMenuOpen={setHamburgerMenuOpen} props={linkProps}/>
+        <NavbarLink link="/about" name="about" setNavbarMenuOpen={setHamburgerMenuOpen} animationProps={linkProps}/>
+        <NavbarLink link="/experience" name="experience" setNavbarMenuOpen={setHamburgerMenuOpen} animationProps={linkProps}/>
+        <NavbarLink link="/projects" name="projects" setNavbarMenuOpen={setHamburgerMenuOpen} animationProps={linkProps}/>
+        <NavbarLink link="/contact" name="contact" setNavbarMenuOpen={setHamburgerMenuOpen} animationProps={linkProps}/>
 
         <animated.div style={linkProps}>
           <a className="navbar-link outline" href={myResume} download>resume</a>

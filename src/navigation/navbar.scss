@@ -149,7 +149,6 @@
     a {
         font-size: 1.5rem;
         text-align: center;
-        padding: 2rem 0;
         font-weight: bold;
         letter-spacing: 0.5rem;
         color: $color-bg;
@@ -167,3 +166,7 @@
     display: none;
 }
 
+.hamburger-menu-item {
+    display: flex;
+    justify-content: center;
+}

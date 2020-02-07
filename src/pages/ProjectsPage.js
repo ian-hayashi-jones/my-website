@@ -90,7 +90,7 @@ function ProjectsPage() {
             <SectionHeader title="Things I've Made"/>
             
             <div className="page-content">
-                {projects.map((project) => (
+                {projects.map((project, key) => (
                     <ProjectItem 
                         title={project.title}
                         subtitle={project.subtitle}
@@ -98,7 +98,8 @@ function ProjectsPage() {
                         url={project.url}
                         info={project.info}
                         icons={project.icons}
-                        layoutLeft={project.layoutLeft}/>
+                        layoutLeft={project.layoutLeft}
+                        key={key}/>
                 ))}
             </div>
         </div>

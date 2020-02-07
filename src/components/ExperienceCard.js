@@ -11,7 +11,7 @@ function ExperienceCard({company, website, position, dates, skills, info}) {
                     </span>
                     <br className="experience-position-br"/>
                     <span className="experience-company">
-                        <a href={website} target="_blank">
+                        <a href={website} target="_blank" rel="noopener noreferrer">
                             {" @ " + company}
                         </a>
                     </span>

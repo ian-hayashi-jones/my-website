@@ -12,8 +12,8 @@ function ProjectItemContent({title, subtitle, info, icons, layoutLeft}) {
             <h3 className="project-item-subtitle">
                 {!layoutLeft && subtitle}
                 <span className={layoutLeft ? "project-item-icons left" : "project-item-icons right"}>
-                    {icons.map((icon) => (
-                        <a className="project-item-icon" href={icon.url} target="_blank">
+                    {icons.map((icon, key) => (
+                        <a className="project-item-icon" href={icon.url} target="_blank" rel="noopener noreferrer" key={key}>
                             {icon.icon}
                         </a>
                     ))}

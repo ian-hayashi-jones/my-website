@@ -14,8 +14,8 @@ function ProjectItem({title, subtitle, image, url, info, icons, layoutLeft}) {
                 layoutLeft={layoutLeft}/>
     
             
-            <a href={url} target="_blank" className="project-item-image-container">
-                <img src={image} alt="toyota image"/>
+            <a href={url} target="_blank" rel="noopener noreferrer" className="project-item-image-container">
+                <img src={image} alt={title + ": " + subtitle}/>
                 <div className="project-item-image-overlay"/>
             </a>
         </div>
