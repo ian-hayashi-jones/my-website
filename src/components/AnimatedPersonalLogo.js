@@ -18,28 +18,28 @@ export default function AnimatedPersonalLogo () {
         strokeDasharray: 200,
         strokeDashoffset: 0,
         from: { strokeDashoffset: 200 },
-        config: { friction: 300 }
+        config: { friction: 300, tension: 100 }
     })
 
     const circleProps = useSpring({
         strokeDasharray: 300,
         strokeDashoffset: 0,
         from: { strokeDashoffset: 300},
-        config: { friction: 300 }
+        config: { friction: 300, tension: 110 }
     })
 
     const dotProps = useSpring({
         strokeDasharray: 50,
         strokeDashoffset: 0,
         from: { strokeDashoffset: 50 },
-        config: { friction: 500 }
+        config: { friction: 500, tension: 100 }
     })
 
     const fillProps = useSpring({
         ref: fillRef,
         opacity: 1,
         from: { opacity: 0 },
-        delay: 1500
+        delay: 2100
     })
 
     const fadeOutProps = useSpring({
