@@ -23,8 +23,8 @@ export default function AnimatedPersonalLogo () {
 
     const circleProps = useSpring({
         strokeDasharray: 200,
-        strokeDashoffset: 50,
-        from: { strokeDashoffset: -100 },
+        strokeDashoffset: 0,
+        from: { strokeDashoffset: 200 },
         config: { friction: 300 }
     })
 
