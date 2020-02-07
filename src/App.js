@@ -12,7 +12,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import Footer from './pages/Footer';
 
-const LOADING_ANIMATION_TIME = 6000;
+const LOADING_ANIMATION_TIME = 3000;
 
 function App() {
   // Loading page timing
