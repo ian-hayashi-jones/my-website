@@ -437,6 +437,10 @@ $color-project-item-overlay: #D1E6F9;
 
 .project-item-image-overlay:hover {
     opacity: .3;
+
+    @media (hover: none) {
+        opacity: 0;
+    }
 }
 
 .project-item-image-container img {
