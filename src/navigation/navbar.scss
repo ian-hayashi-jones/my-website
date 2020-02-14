@@ -85,6 +85,10 @@
 
 .personal-logo:hover {
     opacity: $hover-opacity;
+
+    @media (hover: none) {
+        opacity: 1;
+    }
 }
 
 /* hamburger menu */
@@ -104,6 +108,10 @@
 
 .navbar-menu-icon:hover {
     opacity: $hover-opacity;
+
+    @media (hover: none) {
+        opacity: 1;
+    }
 }
 
 .navbar-menu-icon::before,
@@ -117,6 +125,7 @@
     height: 3px;
     background-color: $color-primary;
     transition: transform 0.3s ease-in;
+    border-radius: 1px;
 }
 
 .navbar-menu-icon::before {

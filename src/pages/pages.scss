@@ -540,9 +540,12 @@ $color-project-item-overlay: #D1E6F9;
     cursor: pointer;
 }
 
-
 .project-icon-vector:hover {
     fill: $color-primary;
+
+    @media (hover: none) {
+        fill: $color-secondary;
+    }
 }
 
 

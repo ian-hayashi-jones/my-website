@@ -27,6 +27,10 @@
 
 .socials-sidebar-icon:hover {
     fill: $color-primary;
+
+    @media (hover: none) {
+        fill: $color-secondary;
+    }
 }
 
 .socials-sidebar-line {
