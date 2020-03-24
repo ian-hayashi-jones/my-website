@@ -63,7 +63,7 @@ function Socials() {
                 </animated.div>
             </a>
             
-            <a className="socials-sidebar-item" href="https://github.com/ianjones763/" target="_blank" rel="noopener noreferrer">
+            <a className="socials-sidebar-item" href="https://github.com/ian-hayashi-jones/" target="_blank" rel="noopener noreferrer">
                 <animated.div style={midItemProps}>
                     <GithubIcon/>
                 </animated.div>
