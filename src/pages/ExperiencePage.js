@@ -4,12 +4,20 @@ import SectionHeader from '../components/SectionHeader';
 import ExperienceMenuItem from '../components/ExperienceMenuItem';
 import ExperienceCard from '../components/ExperienceCard';
 
-import OracleNetSuiteLogo from '../assets/experience/OracleNetSuiteLogo';
-import UDLogo from '../assets/experience/UDLogo';
-import NvidiaLogo from '../assets/experience/NvidiaLogo';
-import StanfordEngineeringLogo from '../assets/experience/StanfordEngineeringLogo';
-import ToyotaLogo from '../assets/experience/ToyotaLogo';
-
+const GUILD_INFO = 
+    <div>
+        <div className="experience-paragraph">
+            Guild creates custom co-branded credit cards and rewards programs for brands across the world.
+        </div>
+        <br></br>
+        <div className="experience-paragraph">
+            I was one of the two founding engineers at Guild.
+        </div>
+        <br></br>
+        <div className="experience-paragraph">
+            I am responsible for designing and building the backend system for our MVP.
+        </div>
+    </div>
 
 const UD_INFO = 
     <div>
@@ -72,7 +80,14 @@ function ExperiencePage() {
 
     const experiences = [
         <ExperienceCard className="experience-utility-design" 
-                        logo={<UDLogo/>}
+                        company="Guild" 
+                        website="https://www.guildcredit.com/"
+                        position="Software Engineer" 
+                        dates="2020 - present" 
+                        skills="AWS ecosystem, Java" 
+                        info={GUILD_INFO}/>,
+
+        <ExperienceCard className="experience-utility-design" 
                         company="Utility Design" 
                         website="https://utility.design/"
                         position="Technical and Design Consultant" 
@@ -81,16 +96,14 @@ function ExperiencePage() {
                         info={UD_INFO}/>,
 
         <ExperienceCard className="experience-oracle-netsuite" 
-                        logo={<OracleNetSuiteLogo/>}
                         company="Oracle NetSuite" 
                         website="https://www.netsuite.com/portal/home.shtml"
                         position="Software Engineer" 
-                        dates="2019 - present" 
+                        dates="2019 - 2020" 
                         skills="Machine Learning, Java, SQL" 
                         info={ORACLE_NETSUITE_INFO}/>,
 
         <ExperienceCard className="experience-nvidia" 
-                        logo={<NvidiaLogo/>}
                         company="NVIDIA" 
                         website="https://www.nvidia.com/en-us/"
                         position="Software Engineer Intern" 
@@ -99,7 +112,6 @@ function ExperiencePage() {
                         info={NVIDIA_INFO}/>,
                     
         <ExperienceCard className="experience-stanford-engineering" 
-                        logo={<StanfordEngineeringLogo/>}
                         company="Stanford School of Engineering" 
                         website="https://engineering.stanford.edu/"
                         position="Course Assistant" 
@@ -108,7 +120,6 @@ function ExperiencePage() {
                         info={STANFORD_ENGINEERING_INFO}/>,
 
         <ExperienceCard className="experience-toyota" 
-                        logo={<ToyotaLogo/>}
                         company="Toyota InfoTech Labs" 
                         website="https://www.tri.global/research/"
                         position="Deep Learning Research Intern" 
@@ -118,7 +129,6 @@ function ExperiencePage() {
     ]
 
 
-
     return (
         <div className="page-container">
             <SectionHeader title="Jobs I've Had"/>
@@ -126,23 +136,26 @@ function ExperiencePage() {
             <div className="page-content experience-container">
                 <div className="experience-menu-container">
                     <div onClick={() => setCurrExperience(0)}>
-                        <ExperienceMenuItem company="Utility Design" highlight={currExperience === 0 ? true : false}/>
+                        <ExperienceMenuItem company="Guild" highlight={currExperience === 0 ? true : false}/>
+                    </div>
+                    <div onClick={() => setCurrExperience(1)}>
+                        <ExperienceMenuItem company="Utility Design" highlight={currExperience === 1 ? true : false}/>
                     </div>
                     
-                    <div onClick={() => setCurrExperience(1)}>
-                        <ExperienceMenuItem company="Oracle NetSuite" highlight={currExperience === 1 ? true : false}/>
-                    </div>
-
                     <div onClick={() => setCurrExperience(2)}>
-                        <ExperienceMenuItem company="NVIDIA" highlight={currExperience === 2 ? true : false}/>
+                        <ExperienceMenuItem company="Oracle NetSuite" highlight={currExperience === 2 ? true : false}/>
                     </div>
 
                     <div onClick={() => setCurrExperience(3)}>
-                        <ExperienceMenuItem company="Stanford University School of Engineering" highlight={currExperience === 3 ? true : false}/>
+                        <ExperienceMenuItem company="NVIDIA" highlight={currExperience === 3 ? true : false}/>
                     </div>
 
                     <div onClick={() => setCurrExperience(4)}>
-                        <ExperienceMenuItem company="Toyota InfoTech Labs" highlight={currExperience === 4 ? true : false}/>
+                        <ExperienceMenuItem company="Stanford University School of Engineering" highlight={currExperience === 4 ? true : false}/>
+                    </div>
+
+                    <div onClick={() => setCurrExperience(5)}>
+                        <ExperienceMenuItem company="Toyota InfoTech Labs" highlight={currExperience === 5 ? true : false}/>
                     </div>
                 </div>
 

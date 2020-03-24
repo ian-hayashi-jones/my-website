@@ -1,7 +1,8 @@
 import React from 'react';
 
-import OracleNetSuiteLogo from '../assets/experience/OracleNetSuiteLogo';
+import GuildLogo from '../assets/experience/GuildLogo';
 import UDLogo from '../assets/experience/UDLogo';
+import OracleNetSuiteLogo from '../assets/experience/OracleNetSuiteLogo';
 import NvidiaLogo from '../assets/experience/NvidiaLogo';
 import StanfordEngineeringLogo from '../assets/experience/StanfordEngineeringLogo';
 import ToyotaLogo from '../assets/experience/ToyotaLogo'
@@ -9,6 +10,9 @@ import ToyotaLogo from '../assets/experience/ToyotaLogo'
 function ExperienceMenuItem({company, highlight}) {
     let companyLogo = {};
     switch(company) {
+        case 'Guild':
+            companyLogo = <GuildLogo highlight={highlight}/>;
+            break;
         case 'Utility Design':
             companyLogo = <UDLogo highlight={highlight}/>;
             break;
