@@ -17,7 +17,7 @@ const BACKGROUND_INFO =
 const WORK_INFO =
     <div>
         I currently work as a software engineer at 
-        <span className="about-companyname">Guild</span>
+        <span className="about-companyname"> Guild</span>
         , building a consumer co-branded credit card system from the ground up.
     </div>
 
