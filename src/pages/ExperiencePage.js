@@ -22,10 +22,6 @@ const GUILD_INFO =
 const UD_INFO = 
     <div>
         <div className="experience-paragraph">
-            Utility Design is a 5-person LA-based startup that creates products to help musicians learn instruments quicker and more efficiently.
-        </div>
-        <br></br>
-        <div className="experience-paragraph">
             I provided technical consultation to create and 
             launch <a href="https://utility.design/products/ud-rep-pedal" target="_blank" rel="noopener noreferrer">UD Rep</a> and <a href="https://utility.design/products/ud-vidami-pedal" target='_blank' rel="noopener noreferrer">UD Vidami</a> guitar 
             pedals, tools to learn guitar through online videos.
@@ -63,10 +59,6 @@ const TOYOTA_INFO =
     <div>
         <div className="experience-paragraph">
             I was a research intern under Kyungtae Han, exploring novel techniques for autonomous driving and driver assistance with the Digital Twin Project.
-        </div>
-        <br></br>
-        <div className="experience-paragraph">
-            I implemented long short-term memory neural networks for predicting vehicle acceleration behavior, and researched experimental deep learning methods for driving.
         </div>
         <br></br>
         <div className="experience-paragraph">

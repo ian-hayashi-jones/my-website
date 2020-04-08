@@ -3,8 +3,8 @@ import React from 'react';
 
 function ExperienceCard({company, website, position, dates, skills, info}) {
     return (
-        <div className="card">
-            <div className="experience-card-info-container">
+        <div className="experience-card-info-container">
+            <div>
                 <h3 className="header"> 
                     <span>
                         {position}

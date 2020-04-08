@@ -277,15 +277,14 @@
     width: 350px;
 
     @include media-query($tablet) {
-        justify-content: center;
-        padding-left: 70px;
         height: auto;
-        width: 500px;
+        width: 550px;
     }
 
     @include media-query($laptop) {
         flex-direction: column;
         width: auto;
+        height: 500px;
         padding-left: 0px;
     }
 }
@@ -362,6 +361,30 @@
     font-weight: bold;
 }
 
+.experience-card-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+
+    @include media-query($mobile-landscape) {
+        width: 400px;
+    }
+
+    @include media-query($tablet) {
+        width: 600px;
+    }
+
+    @include media-query($laptop) {
+        flex-direction: row;
+        width: 550px;
+    }
+
+    @include media-query($desktop) {
+        width: 600px;
+    }
+}
+
 .experience-card-logo-container {
     flex-shrink: 0;
     width: 250px;
@@ -412,6 +435,7 @@ $color-project-item-overlay: #D1E6F9;
     background-color: $color-bg-card;
     box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
     cursor: pointer;
+    transition: $hover-transition;
 
     @include media-query($mobile-landscape) {
        padding: 20px;
@@ -422,6 +446,10 @@ $color-project-item-overlay: #D1E6F9;
         margin: 0;
         margin-top: 150px;
     }
+}
+
+.project-item-image-container:hover {
+    transform: translate(0,-30px);
 }
 
 .project-item-image-overlay {
@@ -436,7 +464,7 @@ $color-project-item-overlay: #D1E6F9;
 }
 
 .project-item-image-overlay:hover {
-    opacity: .3;
+    opacity: 0.15;
 
     @media (hover: none) {
         opacity: 0;
@@ -536,6 +564,11 @@ $color-project-item-overlay: #D1E6F9;
     width: 30px;
     margin-left: 5px;
     margin-right: 5px;
+    transition: $hover-transition;
+}
+
+.project-item-icon:hover {
+    transform: translate(0,-4px);
 }
 
 .project-icon-vector {

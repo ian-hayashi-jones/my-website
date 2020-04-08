@@ -16,8 +16,7 @@ const BACKGROUND_INFO =
 
 const WORK_INFO =
     <div>
-        I currently work as a software engineer at 
-        <span className="about-companyname"> Guild</span>
+        I currently work as a software engineer at <a className="about-companyname" href="https://www.guildcredit.com/" target="_blank" rel="noopener noreferrer">Guild</a>
         , building a consumer co-branded credit card system from the ground up.
     </div>
 

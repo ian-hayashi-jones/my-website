@@ -34,7 +34,7 @@ const projects = [
         title: 'Avalaunch',
         subtitle: '2D endless runner game',
         image: avalaunchImage,
-        url: 'https://ianjones763.github.io/avalaunch-site/',
+        url: 'https://ian-hayashi-jones.github.io/avalaunch-site/',
         info: 'Avalaunch is a 2D endless runner video game implemented in Unity. Play as a parachute-skiier yeti riding frantically downhill to avoid an avalanche!',
         icons: [
                     {icon: <YouTubeIcon/>, 
@@ -42,7 +42,7 @@ const projects = [
                     {icon: <ItchIcon/>,
                      url: 'https://stanfordstudentgames.itch.io/avalaunch'},
                     {icon: <GithubIcon/>, 
-                     url: 'https://github.com/ianjones763/yeti-avalaunch'}
+                     url: 'https://github.com/ian-hayashi-jones/yeti-avalaunch'}
                 ],
         layoutLeft: false
     },
@@ -50,11 +50,11 @@ const projects = [
         title: 'The \'Most Country\' Words',
         subtitle: 'interactive website',
         image: countryMusicImage,
-        url: 'https://ianjones763.github.io/countryMusicLyricsExplainer/',
+        url: 'https://ian-hayashi-jones.github.io/countryMusicLyricsExplainer/',
         info: 'This interactive data visualization website analyzes thousands of songs to determine what words make up the country music genre.',
         icons: [
                     {icon: <GithubIcon/>, 
-                     url: 'https://github.com/ianjones763/countryMusicLyricsExplainer'},
+                     url: 'https://github.com/ian-hayashi-jones/countryMusicLyricsExplainer'},
                     {icon: <PaperIcon/>,
                      url: countryPdf}
                 ],
@@ -64,7 +64,7 @@ const projects = [
         title: 'Quest',
         subtitle: 'cross-platform mobile AR app',
         image: questImage,
-        url: 'https://ianjones763.github.io/quest-site/',
+        url: 'https://ian-hayashi-jones.github.io/quest-site/',
         info: 'Quest is a cross-platform AR mobile messaging app that aims at making mobile messaging more personal. Design scavenger hunts for your partner and have them go on an Augment Reality Quest!',
         icons: [
                     {icon: <GithubIcon/>, 
@@ -76,7 +76,7 @@ const projects = [
         title: 'PodMate',
         subtitle: 'mobile app design',
         image: podmateImage,
-        url: 'https://ianjones763.github.io/podmate-site/',
+        url: 'https://ian-hayashi-jones.github.io/podmate-site/',
         info: 'PodMate is a design concept for a mobile app that helps Juul users quit. Set a goal, track your progress, and quit vaping!',
         icons: [],
         layoutLeft: true
