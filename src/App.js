@@ -21,11 +21,11 @@ function App() {
     setIsLoading(false);
   }, LOADING_ANIMATION_TIME)
 
-  // if (isLoading) {
-  //   return (
-  //     <LoadingPage/>
-  //   )
-  // } else {
+  if (isLoading) {
+    return (
+      <LoadingPage/>
+    )
+  } else {
     return (
       <div>
         <Navbar/>
@@ -59,6 +59,6 @@ function App() {
       </div>
     )
   }
-// }
+}
 
 export default App;
