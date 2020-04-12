@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "63e551553547b254d411af500b0d72ad",
+    "revision": "2c76ed86b75525f8389bb6ac131b39e9",
     "url": "/index.html"
   },
   {
-    "revision": "b60cc68cba06d0b33bcb",
+    "revision": "fa48d983c87249945cac",
     "url": "/static/css/main.f69b4fe1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b94a0022.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b60cc68cba06d0b33bcb",
-    "url": "/static/js/main.bec71e10.chunk.js"
+    "revision": "fa48d983c87249945cac",
+    "url": "/static/js/main.7d572ff6.chunk.js"
   },
   {
     "revision": "931686523e4ddd616378",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/country-explainer-project-tile.5b3342d2.png"
   },
   {
-    "revision": "a12937d6f0e2dbddb9eb1df7a393e6b8",
-    "url": "/static/media/ianjones-resume.a12937d6.pdf"
+    "revision": "345e6ceb4440b59a3de6515a58f67bcb",
+    "url": "/static/media/ian-hayashi-jones-resume.345e6ceb.pdf"
   },
   {
     "revision": "6fee219556b52f332d04ef0cf5407a08",
