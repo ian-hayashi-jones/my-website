@@ -6,7 +6,7 @@ import './navbar.scss';
 import NavbarLink from '../navigation/NavbarLink';
 import PersonalLogo from '../assets/PersonalLogo';
 
-import myResume from '../assets/ianjones-resume.pdf';
+import myResume from '../assets/ian-hayashi-jones-resume.pdf';
 import HamburgerMenu from './HamburgerMenu';
 
 function Navbar() {
