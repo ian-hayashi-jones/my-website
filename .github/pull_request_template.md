@@ -1,5 +1,5 @@
-Link to Monday pulse:
+Monday pulse:
 
-Link to spec:
+Product spec:
 
 Description of changes:
